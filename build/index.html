@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru" class="html">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <title>SPACEX</title>
+  <link rel="preload" href="fonts/MuseoSansCyrl-100.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MuseoSansCyrl-100.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MuseoSansCyrl-300.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MuseoSansCyrl-300.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MuseoSansCyrl-700.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/MuseoSansCyrl-700.woff" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css"/>
+</head>
+<body class="body">
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header__logo-wrapper">
+        <svg class="header__corner-top-left" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1H1V8" stroke="white"/>
+        </svg>
+        <svg class="header__corner-bottom-left" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1H1V8" stroke="white"/>
+        </svg>
+        <picture>
+          <source srcset="../img/logo.webp, ../img/logo@2x.webp 2x" type="image/webp">
+          <img class="header__logo-img" src="../img/logo.png" srcset="../img/logo@2x.png 2x" alt="Логотип spaceX">
+        </picture>
+        <svg class="header__corner-top-right" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 1H1V8" stroke="white"/>
+        </svg>
+        <svg class="header__corner-bottom-right" width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 1H1V8" stroke="white"/>
+        </svg>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__list">
+          <li class="header__item"><a class="header__link" href="#">Главная</a></li>
+          <li class="header__item"><a class="header__link" href="#">Технология</a></li>
+          <li class="header__item"><a class="header__link" href="#">График полетов</a></li>
+          <li class="header__item"><a class="header__link" href="#">Гарантии</a></li>
+          <li class="header__item"><a class="header__link" href="#">О компании</a></li>
+          <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="introdution">
+      <h1 class="introdution__text-travel">
+        <span class="introdution__purpose-project">Путешествие</span><br>
+        на красную планету
+      </h1>
+      <button class="introdution__button-travel">
+        <svg class="introdution__button-corner-left-bottom" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1H1V8" stroke="white"/>
+        </svg>
+        <span class="introdution__button-travel-text">Начать путешествие</span>
+        <svg class="introdution__button-corner-right-top" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 1H1V8" stroke="white"/>
+        </svg>
+      </button>
+    </section>
+    <section class="about-project">
+      <h2 class="about-project__title-for-limited-opportunities">О проекте</h2>
+      <ul class="about-project__list">
+          <li class="about-project__item"><p class="about-project__content">мы<span class="about-project__content-number-uppercase"> 1 </span> на рынке</p></li>
+          <li class="about-project__item"><p class="about-project__content">гарантируем<span class="about-project__content-number-uppercase"> 50% </span>безопасновать</p></li>
+          <li class="about-project__item"><p class="about-project__content">календарик за<span class="about-project__content-number-uppercase"> 2001<span class="about-project__content-date">г.</span> </span>в подарок</p></li>
+          <li class="about-project__item"><p class="about-project__content">путешествие<span class="about-project__content-number-uppercase"> 597 </span>дней</p></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer"></footer>
+  <script src="./js/main.js" type="module"></script>
+</body>
+</html>

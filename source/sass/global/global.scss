@@ -1,0 +1,95 @@
+// @include font("RobotoCondensed", "RobotoCondensed-Bold", 700);
+@include font("MuseoSansCyrl", "MuseoSansCyrl-100", 100);
+@include font("MuseoSansCyrl", "MuseoSansCyrl-300", 300);
+@include font("MuseoSansCyrl", "MuseoSansCyrl-700", 700);
+
+.html {
+  height: 100%;
+  font-family: "MuseoSansCyrl", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16.41px;
+  font-weight: 400;
+  font-style: normal;
+
+  scroll-behavior: smooth;
+
+  margin: 0 auto;
+
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.body {
+  height: 100%;
+  background: url("../img/background.png") no-repeat 50% 0 / cover;
+  @include retina {
+    background-image: url(../img/background@2x.png);
+  }
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  // @media (max-width: 767.99px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  // }
+  padding: 0 50px 0 50px;
+  @include tablet {
+    padding: 0 20px 0 20px;
+  }
+  @include mobile {
+    grid-template-columns: 1fr;
+    padding: 0 15px 0 15px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  border: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  padding: 0;
+  margin: -1px;
+}
+
+a {
+  text-decoration: none;
+
+  color: white;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
